@@ -5,10 +5,19 @@ body{
 }
 
 #img-container{
+    text-align: center;
     background: rgb(200, 223, 244);
+    display: flex;
+    flex-direction: column;
+    
+    align-items:  center;
     width: 400px;
     height: 500px;
 }
+
+h2{padding: 10px;
+    width: 360px;
+background: white;}
 
 #upload-btn{
     border: 0px;
@@ -17,3 +26,21 @@ body{
     width: 200px;
 }
 
+div{margin-top: 5px;
+    margin-bottom: 10px;}
+
+img{width: 320px;
+    height: 150px;
+margin-left: 3px;}
+
+
+.d{
+     text-align: center;
+    background: rgb(200, 223, 244);
+    display: flex;
+    flex-direction: column;
+    
+    align-items:  center;
+    width: 400px;
+    height: 500px;
+}
