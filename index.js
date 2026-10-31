@@ -19,31 +19,24 @@ const imagesUrl=['https://picsum.photos/600/400',
     'https://picsum.photos/600/400',
     'https://picsum.photos/600/400']
 
-
-function h(url){
-    let p=document.createElement('img')
-    p.src='https://picsum.photos/600/400'
-    return p
-}
-
-let arr=[h(),h()]
-
-
 try{
-async function nae(params) {
-    let p=imagesUrl.map(e=>{
+async function renderImages(urlArr) {
+    let iterate=urlArr.map(e=>{
     return image(e)
 })
-const wait=await Promise.all(p)
+const wait=await Promise.all(iterate)
 for(let i of wait){
-mainn.append(i)
+    let div=document.createElement('div')
+    div.append(i)
+    mainn.setAttribute('class','d')
+mainn.append(div)
 }
 
 imgContainer.remove()
 }
 btn.addEventListener('click',()=>{
     console.log('hello')
-    nae()
+    renderImages(imagesUrl)
 })
 }catch(e){
 console.log(e)
